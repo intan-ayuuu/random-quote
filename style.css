@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: #111111;
+    font-family: "IBM Plex Mono", monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    width: 90%;
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.box-quotes {
+    width: 100%;
+    background: #1A1A1A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #2A2A2A;
+    padding: 32px 24px;
+    margin-bottom: 20px;
+}
+h1 {
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #ffffff;
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+}
+.sub-title {
+    color: #555555;
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 3px;
+    margin-bottom: 24px;
+}
+blockquote {
+      width: 100%;
+}
+blockquote p {
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+    color: #D0D0D0;
+    line-height: 1.8;
+    margin-bottom: 18px;
+}
+blockquote p::before, 
+blockquote p::after {
+    content: '"';
+}
+blockquote span {
+    font-size: 12px;
+    font-weight: 500;
+    display: block;
+    text-align: right;
+    color: #888888;
+    position: relative;
+}
+.btn-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.new-btn {
+    font-family: "IBM Plex Mono", monospace;
+    background: #FFFFFF;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.new-btn:hover {
+    background: #D0D0D0;
+    color: #111111;
+}
+.sound-btn img {
+    width: 14px;
+    vertical-align: middle;
+    filter: brightness(0) invert(0.60);
+}
+.share-btn,
+.copy-btn,
+.sound-btn {
+    font-family: inherit;
+    color: #888888;
+    background: transparent;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 10px 20px;
+    border: 1px solid #333333;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.share-btn img {
+    width: 14px;
+    vertical-align: middle;
+}
+.copy-btn:hover,
+.share-btn:hover,
+.sound-btn:hover {
+    background: #1A1A1A;
+    border-color: #555555;
+    color: #D0D0D0;
+}
+.copy-btn img {
+    width: 14px;
+    vertical-align: middle;
+    filter: brightness(0) invert(0.50);
+}
+.counter {
+    color: #444444;
+    font-size: 11px;
+    font-weight: 300;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+
+}
+.toast {
+    font-size: 12px;
+    font-weight: 300;
+    color: #444444;
+    border: 1px solid #333333;
+    padding: 10px 20px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.toast.show {
+    opacity: 1;
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 16px;
+        letter-spacing: 2px;
+    }
+    .sub-title {
+        font-size: 10px;
+        letter-spacing: 2px;
+    }
+    blockquote p {
+        font-size: 15px;
+    }
+    .box-quotes {
+        padding: 24px 16px;
+    }
+    .btn-group {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .new-btn,
+    .copy-btn,
+    .share-btn,
+    .sound-btn {
+        padding: 8px 14px;
+        font-size: 12px;
+    }
+}

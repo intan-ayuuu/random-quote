@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Quote</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>mono quotes</h1>
+        <span class="sub-title">/ minimal wisdom /</span>
+
+        <div class="box-quotes">
+            <blockquote>
+                <p id="quoteText">Press the button for a new quote</p>
+                <span id="quoteAuthor">— ???</span>
+            </blockquote>
+        </div>
+        <div class="btn-group">
+            <button class="new-btn" id="newBtn">new</button>
+            <button class="sound-btn" id="soundBtn">
+                <img src="images/wave-sound.png" alt="">
+            </button>
+            <button class="copy-btn" id="copyBtn">
+                <img src="images/copy.png" alt="">
+            copy</button>
+            <button class="share-btn" id="shareBtn">
+                <img src="images/twitter.png">
+            share</button>
+        </div>
+        <div class="counter" id="counter">000</div>
+        <div class="toast" id="toast">copied</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
